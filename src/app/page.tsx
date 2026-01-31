@@ -11,13 +11,13 @@ export default function Home() {
           </div>
           <span className="text-xl font-bold text-gray-900">ProposalPilot</span>
         </div>
-        <div className="flex items-center gap-4">
-          <Link href="/auth/signin" className="text-gray-600 hover:text-gray-900 font-medium">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <Link href="/auth/signin" className="text-gray-600 hover:text-gray-900 font-medium text-sm sm:text-base px-2 py-2">
             Sign In
           </Link>
           <Link
             href="/auth/signup"
-            className="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 font-medium transition"
+            className="bg-blue-600 text-white px-4 sm:px-5 py-2.5 rounded-lg hover:bg-blue-700 font-medium transition text-sm sm:text-base min-h-[44px] flex items-center"
           >
             Get Started Free
           </Link>
@@ -26,31 +26,31 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 md:py-32">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               ✨ AI-Powered Proposal Generation
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-gray-900 tracking-tight leading-tight">
               Win more clients with{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="gradient-text">
                 stunning proposals
               </span>
             </h1>
-            <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-4 sm:mt-6 text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
               Describe your project in plain English and let AI generate professional,
               detailed proposals in seconds. Close deals faster.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/auth/signup"
-                className="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/25"
+                className="bg-blue-600 text-white px-6 sm:px-8 py-4 rounded-xl text-base sm:text-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-600/25 min-h-[48px] flex items-center justify-center"
               >
                 Start Creating Proposals →
               </Link>
               <Link
                 href="/auth/signin"
-                className="bg-gray-100 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-200 transition"
+                className="bg-gray-100 text-gray-700 px-6 sm:px-8 py-4 rounded-xl text-base sm:text-lg font-semibold hover:bg-gray-200 transition min-h-[48px] flex items-center justify-center"
               >
                 View Demo
               </Link>

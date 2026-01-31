@@ -54,7 +54,7 @@ export function Navbar() {
               <div className="md:hidden flex items-center">
                 <button
                   onClick={() => setMobileOpen(!mobileOpen)}
-                  className="text-gray-600 p-2"
+                  className="text-gray-600 p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {mobileOpen ? (
@@ -88,19 +88,19 @@ export function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && session && (
         <div className="md:hidden border-t border-gray-200 bg-white">
-          <div className="px-4 py-3 space-y-2">
-            <Link href="/dashboard" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
+          <div className="px-4 py-3 space-y-1">
+            <Link href="/dashboard" className="block py-3 text-gray-700 font-medium text-base min-h-[44px] flex items-center" onClick={() => setMobileOpen(false)}>
               Dashboard
             </Link>
-            <Link href="/proposals/new" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
+            <Link href="/proposals/new" className="block py-3 text-gray-700 font-medium text-base min-h-[44px] flex items-center" onClick={() => setMobileOpen(false)}>
               New Proposal
             </Link>
-            <Link href="/settings" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
+            <Link href="/settings" className="block py-3 text-gray-700 font-medium text-base min-h-[44px] flex items-center" onClick={() => setMobileOpen(false)}>
               Settings
             </Link>
             <button
               onClick={() => signOut({ callbackUrl: "/" })}
-              className="block py-2 text-gray-700 font-medium w-full text-left"
+              className="block py-3 text-gray-700 font-medium w-full text-left text-base min-h-[44px]"
             >
               Sign Out
             </button>
